@@ -1,7 +1,6 @@
 from dataclasses import dataclass
 from threading import Thread
 import time
-
 import mixbox
 
 # constants
@@ -112,11 +111,11 @@ class PaintTank:
         """
         self.paint += inflow
 
-    def fill(self, level=1.0):
+    def fill(self, level=1):
         """
         fill up the tank based on the specified initial paint mixture
         """
-        self.paint = self.initial_paint * (level * self.tank_volume / self.initial_paint.volume)
+        self.paint = self.initial_paint * (level * self.tank_volume / (1.12*self.initial_paint.volume))
 
     def flush(self):
         """
@@ -199,9 +198,9 @@ class PaintTank:
             self.paint *= self.tank_volume / self.paint.volume
 
         #check if it has reached the very high and very low level
-        if self.level_tank < 0.1:
+        if self.get_level() < 0.1:
             print("Very low level reached")
-        elif self.level_tank > 0.90:
+        elif self.get_level() > 0.90:
             print("very high level reached")
 
         # return outgoing paint mixture
@@ -285,6 +284,7 @@ if __name__ == "__main__":
 
     # set initial conditions, open valve of first tank by 50%
     simulator.tanks[0].set_valve(50)
+
 
     # run the simulation for the specified time step and print some information
     for i in range(10):
