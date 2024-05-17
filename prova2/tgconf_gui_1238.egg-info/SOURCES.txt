@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+tgconf_gui_1238/__init__.py
+tgconf_gui_1238/config.py
+tgconf_gui_1238/config.xml
+tgconf_gui_1238/test_2.jdw
+tgconf_gui_1238.egg-info/PKG-INFO
+tgconf_gui_1238.egg-info/SOURCES.txt
+tgconf_gui_1238.egg-info/dependency_links.txt
+tgconf_gui_1238.egg-info/entry_points.txt
+tgconf_gui_1238.egg-info/requires.txt
+tgconf_gui_1238.egg-info/top_level.txt

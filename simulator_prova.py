@@ -103,6 +103,9 @@ class PaintTank:
         self.valve_ratio = 0  # valve closed
         self.outflow = 0
         self.level_tank = 0.5 #added
+        self.temperature = 25  #added
+        self.pH = 4 #added values
+        self.previous_alarm_state = False #added
 
     def add(self, inflow):
         """
@@ -129,7 +132,7 @@ class PaintTank:
         range: 0.0 (empty) - 1.0 (full)
         """
         level_tank = self.paint.volume / self.tank_volume
-        return level_tank*100
+        return level_tank
 
     def get_valve(self):
         """
@@ -198,10 +201,15 @@ class PaintTank:
             self.paint *= self.tank_volume / self.paint.volume
 
         #check if it has reached the very high and very low level
-        if self.get_level() < 0.1:
-            print("Very low level reached")
-        elif self.get_level() > 0.90:
-            print("very high level reached")
+        if 0.1 <= self.level_tank <= 0.90:
+            # Reset alarm state
+            self.previous_alarm_state = False
+        else:
+            # Check if alarm state has changed
+            if not self.previous_alarm_state:
+                # Print alarm message
+                print(f"Alarm: {'Very low' if self.level_tank < 0.1 else 'Very high'} level reached in tank {self.name}")
+                self.previous_alarm_state = True
 
         # return outgoing paint mixture
         return out

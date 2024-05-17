@@ -1,0 +1,9 @@
+JDFile v11 {
+  Global {
+  }
+  JDRectangle {
+    summit:65,72,479,334
+    origin:272,203
+    name:"Rectangle"
+  }
+}

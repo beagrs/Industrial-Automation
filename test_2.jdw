@@ -1,0 +1,91 @@
+JDFile v11 {
+  Global {
+  }
+  JDSlider {
+    summit:45,168,251,172
+    origin:148,173
+    maxvalue:2
+    uservalue:true
+    valuechangemode:2
+    name:"epfl/station1/cyan/valve"
+    extensions:{
+      className:"PaintTank"
+      classParam:"set_valve"
+    }
+    backgroundmapper:{
+      mapping_type:2
+      mode:0
+      default:51,51,255
+      map:0,0,51,51,255
+    }
+    maxSlider:2.0
+    valueSlider:0.1
+    orientation:0
+    cursor:
+      JDRectangle {
+        summit:47.5,162.8,63.5,178.8
+        origin:55,170
+        foreground:255,51,51
+        background:0,255,255
+        fillStyle:1
+        isShadowed:true
+        uservalue:true
+        name:"DefaultSliderCursor"
+        backgroundmapper:{
+          mapping_type:2
+          mode:0
+          default:128,128,128
+          map:0,0,0,255,204
+        }
+      }
+  }
+  JDSwingObject {
+    summit:276,156,405,180
+    origin:310,164
+    fillStyle:1
+    lineWidth:0
+    name:"epfl/station1/cyan/flow"
+    extensions:{
+      unitVisible:"true"
+      userFormat:""
+      alarmEnabled:"true"
+      validBackground:"0,255,0"
+      invalidText:"-----"
+    }
+    className:"fr.esrf.tangoatk.widget.attribute.SimpleScalarViewer"
+    font:"Dialog",0,12
+  }
+  JDRectangle {
+    summit:78,114,234,148
+    origin:156,131
+    name:"epfl/station1/cyan"
+  }
+  JDLabel {
+    summit:39,123,74,144
+    origin:57,134
+    lineWidth:0
+    name:"flow"
+    text:"flow"
+  }
+  JDSwingObject {
+    summit:77,116,235,147
+    origin:111,113
+    fillStyle:1
+    lineWidth:0
+    name:"epfl/station1/cyan/temperature"
+    extensions:{
+      unitVisible:"true"
+      userFormat:""
+      alarmEnabled:"true"
+      validBackground:"0,255,0"
+      invalidText:"-----"
+    }
+    className:"fr.esrf.tangoatk.widget.attribute.SimpleScalarViewer"
+    font:"Dialog",0,12
+  }
+  JDRectangle {
+    summit:18,62,636,451
+    origin:327,257
+    name:"Rectangle"
+  }
+}

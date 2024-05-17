@@ -25,13 +25,6 @@ class TankWidget(QWidget):
     """
     MARGIN_BOTTOM = 50
     VALVE_WIDTH = 15
-    TANK_COLORS = {
-        "cyan": QColor("cyan"),
-        "magenta": QColor("magenta"),
-        "yellow": QColor("yellow"),
-        "black": QColor("black"),  
-        "white": QColor("white")
-    }
 
     def __init__(self, tank_width, tank_height=200, level=0):
         super().__init__()
@@ -42,37 +35,11 @@ class TankWidget(QWidget):
         self.valve = 0
         self.flow = 0
         self.setMinimumSize(self.tank_width, self.tank_height + self.MARGIN_BOTTOM)
-        # Aggiungi il pulsante per accendere/spegnere la tank
-        self.power_button = QPushButton("Off", self)
-        self.power_button.setCheckable(True)  # Imposta il pulsante come toggle button
-        self.power_button.clicked.connect(self.toggleTank)  # Collega il click del pulsante alla funzione toggleTank
-        self.power_button.setGeometry(0, self.tank_height + 10, tank_width, 30)  # Posiziona il pulsante sotto lo slider
-
-    def toggleTank(self, checked):
-        """
-        Funzione per accendere/spegnere la tank
-        """
-        if checked:
-            self.power_button.setText("On")
-            self.power_button.setStyleSheet("background-color: white")
-        else:
-            self.power_button.setText("Off")
-            self.power_button.setStyleSheet("background-color: grey")
-
 
     def setValve(self, valve):
         """
         set the valve level between 0 and 100
         """
-        """
-        Imposta il valore della valvola e aggiorna lo stato del pulsante
-        """
-        self.valve = valve
-        if valve > 0:
-            self.power_button.setEnabled(True)  # Abilita il pulsante se la valvola è aperta
-        else:
-            self.power_button.setChecked(False)  # Se la valvola è chiusa, spegni il pulsante e disabilitalo
-            self.power_button.setEnabled(False)
         self.valve = valve
 
     def setFlow(self, flow):
@@ -93,79 +60,39 @@ class TankWidget(QWidget):
         """
         # get a painter object
         painter = QPainter(self)
-        # draw tank outline with rounded edges
-        tank_rect = QRect(1, 1, self.width() - 2, self.height() - self.MARGIN_BOTTOM - 2)
+        # draw tank outline as solid black line
         painter.setPen(QPen(Qt.black, 2, Qt.SolidLine))
-        painter.drawRoundedRect(tank_rect, 10, 10)
-         # Draw tank number label
-        tank_number_label = "T" + str(self.tank_number)
-        painter = QPainter(self)
-        painter.drawText(5, 15, tank_number_label)
+        painter.drawRect(1, 1, self.width() - 2, self.height() - self.MARGIN_BOTTOM - 2)
         # draw paint color
         painter.setPen(QColor(0, 0, 0, 0))
         painter.setBrush(self.fill_color)
         painter.drawRect(2, 2 + int((1.0 - self.fill_level) * (self.height() - self.MARGIN_BOTTOM - 4)),
-                        self.width() - 4,
-                        int(self.fill_level * (self.height() - self.MARGIN_BOTTOM - 4)))
-        # draw valve symbol
+                         self.width() - 4,
+                         int(self.fill_level * (self.height() - self.MARGIN_BOTTOM - 4)))
+        # draw valve symobl
         painter.setPen(QPen(Qt.black, 2, Qt.SolidLine))
         painter.drawLine(self.width() // 2, self.height() - self.MARGIN_BOTTOM, self.width() // 2,
-                        self.height() - self.MARGIN_BOTTOM + 5)
+                         self.height() - self.MARGIN_BOTTOM + 5)
         painter.drawLine(self.width() // 2, self.height(), self.width() // 2,
-                        self.height() - 5)
+                         self.height() - 5)
         painter.drawLine(self.width() // 2 - self.VALVE_WIDTH, self.height() - self.MARGIN_BOTTOM + 5,
-                        self.width() // 2 + self.VALVE_WIDTH,
-                        self.height() - 5)
+                         self.width() // 2 + self.VALVE_WIDTH,
+                         self.height() - 5)
         painter.drawLine(self.width() // 2 - self.VALVE_WIDTH, self.height() - 5, self.width() // 2 + self.VALVE_WIDTH,
-                        self.height() - self.MARGIN_BOTTOM + 5)
+                         self.height() - self.MARGIN_BOTTOM + 5)
         painter.drawLine(self.width() // 2 - self.VALVE_WIDTH, self.height() - self.MARGIN_BOTTOM + 5,
-                        self.width() // 2 + self.VALVE_WIDTH,
-                        self.height() - self.MARGIN_BOTTOM + 5)
+                         self.width() // 2 + self.VALVE_WIDTH,
+                         self.height() - self.MARGIN_BOTTOM + 5)
         painter.drawLine(self.width() // 2 - self.VALVE_WIDTH, self.height() - 5, self.width() // 2 + self.VALVE_WIDTH,
-                        self.height() - 5)
+                         self.height() - 5)
         # draw labels
         painter.drawText(
             QRect(0, self.height() - self.MARGIN_BOTTOM, self.width() // 2 - self.VALVE_WIDTH, self.MARGIN_BOTTOM),
             Qt.AlignCenter, "%u%%" % self.valve)
         painter.drawText(
             QRect(self.width() // 2 + self.VALVE_WIDTH, self.height() - self.MARGIN_BOTTOM,
-                self.width() // 2 - self.VALVE_WIDTH, self.MARGIN_BOTTOM),
+                  self.width() // 2 - self.VALVE_WIDTH, self.MARGIN_BOTTOM),
             Qt.AlignCenter, "%.1f l/s" % self.flow)
-
-        # Draw dashed lines
-        painter.setPen(QPen(Qt.black, 1, Qt.DashLine))
-        # Draw line at 10% of tank height
-        y_10 = 2 + int(0.1 * (self.height() - self.MARGIN_BOTTOM - 4))
-        painter.drawLine(2, y_10, self.width() - 2, y_10)
-        # Draw line at 20% of tank height
-        y_20 = 2 + int(0.2 * (self.height() - self.MARGIN_BOTTOM - 4))
-        painter.drawLine(2, y_20, self.width() - 2, y_20)
-        # Draw line at 80% of tank height
-        y_80 = 2 + int(0.8 * (self.height() - self.MARGIN_BOTTOM - 4))
-        painter.drawLine(2, y_80, self.width() - 2, y_80)
-        # Draw line at 90% of tank height
-        y_90 = 2 + int(0.9 * (self.height() - self.MARGIN_BOTTOM - 4))
-        painter.drawLine(2, y_90, self.width() - 2, y_90)
-
-        # Draw labels
-        painter.setPen(QPen(Qt.black))
-        font = painter.font()
-        font.setPointSize(8)
-        painter.setFont(font)
-        painter.drawText(QRect(self.width() + 10, y_10 - 8, 40, 16), Qt.AlignLeft, "VL")
-        painter.drawText(QRect(self.width() + 10, y_20 - 8, 40, 16), Qt.AlignLeft, "L")
-        painter.drawText(QRect(self.width() + 10, y_80 - 8, 40, 16), Qt.AlignLeft, "H")
-        painter.drawText(QRect(self.width() + 10, y_90 - 8, 40, 16), Qt.AlignLeft, "VH")
-
-        # Draw the color associated with the tank in the center of the tank
-        if self.name != "mixer":  # Don't add color for the "mixer" tank
-            if self.name == "black":  # Se il tank è nero
-                painter.setPen(QColor(255, 255, 255))  # Imposta il colore del testo a bianco
-            else:
-                painter.setPen(QColor(0, 0, 0))  # Altrimenti, imposta il colore del testo a nero
-            painter.drawText(self.rect(), Qt.AlignCenter, self.name.upper())
-
-
 
 
 class PaintTankWidget(QWidget):
@@ -173,10 +100,9 @@ class PaintTankWidget(QWidget):
     Widget to hold a single paint tank, valve slider and command buttons
     """
 
-    def __init__(self, name, width, fill_button=False, flush_button=False, tank_number=0):
+    def __init__(self, name, width, fill_button=False, flush_button=False):
         super().__init__()
         self.name = name
-        self.tank_number = tank_number  
         self.setGeometry(0, 0, width, 400)
         self.setMinimumSize(width, 400)
         self.layout = QVBoxLayout()
@@ -226,19 +152,9 @@ class PaintTankWidget(QWidget):
         # set the valve attribute to fully closed
         worker = TangoWriteAttributeWorker(self.name, TANGO_ATTRIBUTE_VALVE, self.slider.value() / 100.0)
         self.threadpool.start(worker)
-        # Collega il click del pulsante all'attivazione della tank
-        self.tank.power_button.clicked.connect(self.toggleTank)
         self.worker.start()
         # update the UI element
         self.tank.setValve(0)
-
-    def toggleTank(self):
-        """
-        Funzione per accendere/spegnere la tank quando il pulsante viene premuto
-        """
-        valve_value = 100 if self.tank.power_button.isChecked() else 0  # Imposta la valvola al 100% se il pulsante è premuto, altrimenti a 0
-        worker = TangoWriteAttributeWorker(self.name, TANGO_ATTRIBUTE_VALVE, valve_value / 100)
-        self.threadpool.start(worker)
 
     def changedValue(self):
         """
@@ -324,13 +240,12 @@ class ColorMixingPlantWindow(QMainWindow):
         self.window = QWidget()
         self.setCentralWidget(self.window)
 
-        self.tanks = {"cyan": PaintTankWidget("cyan", width=150, fill_button=True, tank_number=1),
-              "magenta": PaintTankWidget("magenta", width=150, fill_button=True, tank_number=2),
-              "yellow": PaintTankWidget("yellow", width=150, fill_button=True, tank_number=3),
-              "black": PaintTankWidget("black", width=150, fill_button=True, tank_number=4),
-              "white": PaintTankWidget("white", width=150, fill_button=True, tank_number=5),
-              "mixer": PaintTankWidget("mixer", width=860, flush_button=True, tank_number=6)}
-
+        self.tanks = {"cyan": PaintTankWidget("cyan", width=150, fill_button=True),
+                      "magenta": PaintTankWidget("magenta", width=150, fill_button=True),
+                      "yellow": PaintTankWidget("yellow", width=150, fill_button=True),
+                      "black": PaintTankWidget("black", width=150, fill_button=True),
+                      "white": PaintTankWidget("white", width=150, fill_button=True),
+                      "mixer": PaintTankWidget("mixer", width=860, flush_button=True)}
 
         hbox.addWidget(self.tanks["cyan"])
         hbox.addWidget(self.tanks["magenta"])

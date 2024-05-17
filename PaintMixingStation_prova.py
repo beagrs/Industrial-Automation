@@ -45,7 +45,7 @@ class PaintTank(Device):
         #return self.tank.get_outflow()
         return 25
     
-    @attribute(dtype=float)
+    @attribute(dtype=int)
     def pH(self):
         """
         get pH attribute attribute
@@ -53,6 +53,7 @@ class PaintTank(Device):
         # TODO: return flow of simulated tank
         #return self.tank.get_outflow()
         return 4
+
 
     valve = attribute(label="valve", dtype=float,
                       access=AttrWriteType.READ_WRITE,

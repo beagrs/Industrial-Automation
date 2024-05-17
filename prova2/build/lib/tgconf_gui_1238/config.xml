@@ -1,0 +1,9 @@
+<taurusgui_config>
+  <GUI_NAME>gui_1238</GUI_NAME>
+  <ORGANIZATION>TAURUS</ORGANIZATION>
+  <CUSTOM_LOGO/>
+  <SYNOPTIC>
+    <synoptic str="test_2.jdw"/>
+  </SYNOPTIC>
+  <MONITOR>tango://localhost:10000/epfl/station1/cyan</MONITOR>
+</taurusgui_config>

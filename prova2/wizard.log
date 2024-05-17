@@ -1,0 +1,10 @@
+Project created by AppSettingsWizard on 2024-05-17T12:42:15.622868
+File copied: /shared/test_2.jdw --> /shared/prova2/tgconf_gui_1238/test_2.jdw
+XML Config file created: "/shared/prova2/tgconf_gui_1238/config.xml"
+Python config file created: "/shared/prova2/tgconf_gui_1238/config.py"
+python init file created: "/shared/prova2/tgconf_gui_1238/__init__.py"
+Application project was successfully created.You can find the files in: "/shared/prova2"
+Tip: You can install it with:
+	pip install /shared/prova2
+Tip: And then run the application with:
+	 gui_1238
