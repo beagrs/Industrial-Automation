@@ -2,7 +2,7 @@ from simulator import Simulator
 
 from tango import AttrWriteType
 from tango.server import Device, attribute, command, run
-
+import random
 
 class PaintTank(Device):
     """
@@ -18,6 +18,13 @@ class PaintTank(Device):
         if not self.tank:
             raise Exception(
                 "Error: Can't find matching paint tank in the simulator with given name = %s" % self.get_name())
+    @attribute(dtype=float)
+    def time_until_empty(self):
+        """
+        get time_until_empty attribute
+        """
+        return self.tank.get_level()/self.tank.get_outflow()
+        
 
     @attribute(dtype=float)
     def level(self):
@@ -43,7 +50,8 @@ class PaintTank(Device):
         """
         # TODO: return flow of simulated tank
         #return self.tank.get_outflow()
-        return 25
+        offset = random.uniform(-0.3, 0.3)
+        return 25+offset
     
     @attribute(dtype=float)
     def pH(self):
@@ -52,12 +60,21 @@ class PaintTank(Device):
         """
         # TODO: return flow of simulated tank
         #return self.tank.get_outflow()
-        return 4
+        offset = random.uniform(-0.2, 0.2)
+        return 4+offset
 
     valve = attribute(label="valve", dtype=float,
                       access=AttrWriteType.READ_WRITE,
                       min_value=0.0, max_value=1.0,
                       fget="get_valve", fset="set_valve")
+    
+    @attribute(dtype=float)
+    def level_array(self):
+        """
+        get level_array attribute
+        """
+        array = [random.uniform(0, 100) for i in range(100)]
+        return array
 
     def set_valve(self, ratio):
         """

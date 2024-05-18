@@ -16,10 +16,10 @@ JDFile v11 {
     shadowThickness:9
     uservalue:true
     valuechangemode:1
-    name:"SwingObject"
+    name:"epfl/station1/cyan/Fill"
     extensions:{
       text:"Fill"
-      className:"atkpanel.MainPanel"
+      device:"epfl/station1/cyan/Fill"
     }
     className:"fr.esrf.tangoatk.widget.command.VoidVoidCommandViewer"
     font:"Dialog",0,27
@@ -45,13 +45,15 @@ JDFile v11 {
     border:2
   }
   JDSwingObject {
-    summit:590,129,989,428
+    summit:590,129,990,429
     origin:790,279
     foreground:255,255,255
     fillStyle:1
     lineWidth:0
     lineStyle:1
-    name:"SwingObject"
+    maxvalue:30
+    uservalue:true
+    name:"epfl/station1/cyan/level_array"
     extensions:{
       trendSettings:"graph_title:'T1 level trend'",
                     "label_visible:true",
@@ -304,7 +306,7 @@ JDFile v11 {
     name:"epfl/station1/cyan/flow"
     extensions:{
       unitVisible:"false"
-      userFormat:"%2.0f"
+      userFormat:"%2.1f"
       alarmEnabled:"true"
       validBackground:"0,255,0"
       invalidText:"-----"
@@ -427,7 +429,7 @@ JDFile v11 {
     name:"epfl/station1/cyan/pH"
     extensions:{
       unitVisible:"false"
-      userFormat:"%2.0f"
+      userFormat:"%2.1f"
       alarmEnabled:"true"
       validBackground:"0,255,0"
       invalidText:"-----"
@@ -443,7 +445,7 @@ JDFile v11 {
     name:"epfl/station1/cyan/temperature"
     extensions:{
       unitVisible:"false"
-      userFormat:"%2.0f"
+      userFormat:"%2.1f"
       alarmEnabled:"true"
       validBackground:"0,255,0"
       invalidText:"-----"
@@ -472,7 +474,7 @@ JDFile v11 {
     origin:430,517
     fillStyle:1
     lineWidth:0
-    name:"SwingObject"
+    name:"epfl/station1/cyan/time_until_empty"
     extensions:{
       unitVisible:"false"
       userFormat:"%2.0f"
@@ -509,7 +511,7 @@ JDFile v11 {
     origin:456,408
     fillStyle:1
     lineWidth:0
-    name:"SwingObject"
+    name:"epfl/station1/cyan/Fill"
     extensions:{
       text:"ON"
     }

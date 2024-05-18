@@ -1,0 +1,3 @@
+[console_scripts]
+group8gui = tgconf_group8gui:run
+
