@@ -19,6 +19,8 @@ JDFile v11 {
     name:"epfl/station1/cyan/Fill"
     extensions:{
       text:"Fill"
+      className:"PaintMixture"
+      classParam:"Fill"
     }
     className:"fr.esrf.tangoatk.widget.command.VoidVoidCommandViewer"
     font:"Dialog",1,12
@@ -649,6 +651,7 @@ JDFile v11 {
   JDLabel {
     summit:484,203,528,224
     origin:505,214
+    foreground:255,255,255
     lineWidth:0
     name:"Label"
     text:"Black"
@@ -973,7 +976,7 @@ JDFile v11 {
     summit:223,512,275,534
     origin:280,524
     fillStyle:1
-    name:"epfl/station1/cyan/Fill"
+    name:"epfl/station1/mixer/Flush"
     extensions:{
       text:"Flush"
     }
@@ -1144,8 +1147,8 @@ JDFile v11 {
     name:"Line"
   }
   JDSwingObject {
-    summit:300,393,398,534
-    origin:358,405
+    summit:300,395,396,546
+    origin:358,407
     fillStyle:1
     name:"epfl/station1/cyan/Fill"
     extensions:{
@@ -1442,14 +1445,14 @@ JDFile v11 {
     text:"L6.1"
   }
   JDSwingObject {
-    summit:730,247,1170,410
-    origin:930,314
+    summit:730,237,1170,400
+    origin:930,304
     foreground:51,51,51
     background:238,238,238
     fillStyle:1
     lineWidth:0
     maxvalue:100
-    name:"epfl/station1/mixer/level"
+    name:"epfl/station1/mixer/temperature"
     extensions:{
       trendSettings:"graph_title:'null'",
                     "label_visible:true",
@@ -1458,7 +1461,7 @@ JDFile v11 {
                     "graph_background:180,180,180",
                     "chart_background:255,255,255",
                     "title_font:Dialog,0,12",
-                    "display_duration:300000.0",
+                    "display_duration:3000.0",
                     "precision:0",
                     "toolbar_visible:true",
                     "tree_visible:false",
@@ -1534,5 +1537,88 @@ JDFile v11 {
     }
     className:"fr.esrf.tangoatk.widget.attribute.Trend"
     font:"Dialog",0,12
+  }
+  JDRectangle {
+    summit:434,421,1172,544
+    origin:434,421
+    name:"Rectangle"
+  }
+  JDLine {
+    summit:581,421,581,542
+    origin:581,482
+    name:"Line"
+  }
+  JDLine {
+    summit:729,422,729,543
+    origin:729,483
+    name:"Line"
+  }
+  JDLine {
+    summit:876,422,876,544
+    origin:876,483
+    name:"Line"
+  }
+  JDLine {
+    summit:1024,422,1024,543
+    origin:1024,483
+    name:"Line"
+  }
+  JDLine {
+    summit:434,453,1171,452
+    origin:803,453
+    name:"Line"
+  }
+  JDLine {
+    summit:434,483,1172,483
+    origin:803,483
+    name:"Line"
+  }
+  JDLine {
+    summit:434,513,1172,514
+    origin:803,514
+    name:"Line"
+  }
+  JDLabel {
+    summit:470,428,544,449
+    origin:507,439
+    lineWidth:0
+    name:"Label"
+    text:"Day/Time"
+  }
+  JDLabel {
+    summit:620,428,677,449
+    origin:657,439
+    lineWidth:0
+    name:"Label"
+    text:"Priority"
+  }
+  JDLabel {
+    summit:775,428,824,449
+    origin:800,439
+    lineWidth:0
+    name:"Label"
+    text:"Origin"
+  }
+  JDLabel {
+    summit:926,428,974,449
+    origin:950,439
+    lineWidth:0
+    name:"Label"
+    text:"Name"
+  }
+  JDLabel {
+    summit:1055,429,1141,450
+    origin:1098,440
+    lineWidth:0
+    name:"Label"
+    text:"Description"
+  }
+  JDLabel {
+    summit:432,387,576,411
+    origin:486,398
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",1,17
+    text:"Alarms/Events"
   }
 }

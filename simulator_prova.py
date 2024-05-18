@@ -201,7 +201,7 @@ class PaintTank:
             self.paint *= self.tank_volume / self.paint.volume
 
         #check if it has reached the very high and very low level
-        if 0.1 <= self.level_tank <= 0.90:
+        if 0.01 <= self.level_tank <= 0.99:
             # Reset alarm state
             self.previous_alarm_state = False
         else:
