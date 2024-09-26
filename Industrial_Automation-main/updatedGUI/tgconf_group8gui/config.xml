@@ -1,0 +1,10 @@
+<taurusgui_config>
+  <GUI_NAME>Group8GUI</GUI_NAME>
+  <ORGANIZATION>TAURUS</ORGANIZATION>
+  <CUSTOM_LOGO/>
+  <SYNOPTIC>
+    <synoptic str="mixingStation.jdw"/>
+    <synoptic str="paintTank.jdw"/>
+  </SYNOPTIC>
+  <MONITOR>tango://localhost:10000/epfl/station1/black,tango://localhost:10000/epfl/station1/cyan,tango://localhost:10000/epfl/station1/magenta,tango://localhost:10000/epfl/station1/mixer,tango://localhost:10000/epfl/station1/white,tango://localhost:10000/epfl/station1/yellow</MONITOR>
+</taurusgui_config>

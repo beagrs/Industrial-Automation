@@ -1,0 +1,1624 @@
+JDFile v11 {
+  Global {
+  }
+  JDRectangle {
+    summit:8,57,1208,557
+    origin:398,291
+    name:"Rectangle"
+  }
+  JDRectangle {
+    summit:27,114,142,294
+    origin:85,209
+    fillStyle:1
+    name:"Rectangle"
+  }
+  JDSwingObject {
+    summit:88,85,140,107
+    origin:145,97
+    fillStyle:1
+    name:"epfl/station1/cyan/Fill"
+    extensions:{
+      text:"Fill"
+      className:"PaintMixture"
+      classParam:"Fill"
+    }
+    className:"fr.esrf.tangoatk.widget.command.VoidVoidCommandViewer"
+    font:"Dialog",1,12
+    border:3
+  }
+  JDBar {
+    summit:35,145,135,287
+    origin:85,216
+    background:102,102,102
+    fillStyle:1
+    maxvalue:100
+    initvalue:1
+    name:"epfl/station1/cyan/level"
+    backgroundmapper:{
+      mapping_type:2
+      mode:0
+      default:0,255,255
+      map:0,0,0,255,255
+    }
+    maxBar:100.0
+    valueBar:0.0
+  }
+  JDLabel {
+    summit:36,120,84,141
+    origin:58,131
+    lineWidth:0
+    name:"Label"
+    text:"Level:"
+  }
+  JDSwingObject {
+    summit:86,122,109,136
+    origin:93,140
+    fillStyle:1
+    lineWidth:0
+    maxvalue:100
+    name:"epfl/station1/cyan/level"
+    extensions:{
+      unitVisible:"false"
+      userFormat:"%2.0f"
+      alarmEnabled:"false"
+      validBackground:"255,255,255"
+      invalidText:"-----"
+    }
+    backgroundmapper:{
+      mapping_type:2
+      mode:0
+      default:255,255,255
+      map:10,100,255,255,255
+      map:10,10,255,0,0
+    }
+    className:"fr.esrf.tangoatk.widget.attribute.SimpleScalarViewer"
+    font:"Dialog",0,12
+  }
+  JDLabel {
+    summit:111,121,131,142
+    origin:121,132
+    lineWidth:0
+    name:"Label"
+    text:"%"
+  }
+  JDLabel {
+    summit:64,205,106,226
+    origin:85,216
+    lineWidth:0
+    name:"Label"
+    text:"Cyan"
+  }
+  JDLine {
+    summit:35,283,135,283
+    origin:84,283
+    lineStyle:1
+    name:"Line"
+  }
+  JDLine {
+    summit:35,264,135,264
+    origin:83,264
+    lineStyle:1
+    name:"Line"
+  }
+  JDLine {
+    summit:36,168,135,168
+    origin:84,168
+    lineStyle:1
+    name:"Line"
+  }
+  JDLine {
+    summit:36,149,135,149
+    origin:84,149
+    lineStyle:1
+    name:"Line"
+  }
+  JDRoundRectangle {
+    summit:27,86,64,106
+    origin:45,96
+    background:153,204,255
+    fillStyle:1
+    name:"RoundRectangle"
+  }
+  JDLabel {
+    summit:34,89,58,110
+    origin:45,100
+    lineWidth:0
+    name:"Label"
+    text:"T1"
+  }
+  JDLine {
+    summit:82,304,82,294
+    origin:82,299
+    name:"Line"
+  }
+  JDGroup {
+    summit:75,305,89,325
+    origin:-6,10
+    background:153,153,153
+    fillStyle:1
+    name:"JDGroup"
+    children: {
+      JDPolyline {
+        summit:75,305,89,305,82,315,75,305
+        origin:82,310
+        background:153,153,153
+        fillStyle:1
+        name:"Polyline"
+      }
+      JDPolyline {
+        summit:75,325,89,325,82,315,75,325
+        origin:82,320
+        background:153,153,153
+        fillStyle:1
+        name:"Polyline"
+      }
+      JDLine {
+        summit:82,305,82,305
+        origin:82,305
+        background:153,153,153
+        fillStyle:1
+        name:"Line"
+      }
+    }
+  }
+  JDSwingObject {
+    summit:93,307,127,321
+    origin:107,325
+    fillStyle:1
+    lineWidth:0
+    maxvalue:100
+    name:"epfl/station1/cyan/flow"
+    extensions:{
+      unitVisible:"false"
+      userFormat:"%2.1f"
+      alarmEnabled:"false"
+      validBackground:"255,255,255"
+      invalidText:"-----"
+    }
+    backgroundmapper:{
+      mapping_type:2
+      mode:0
+      default:255,255,255
+      map:10,100,255,255,255
+      map:10,10,255,0,0
+    }
+    className:"fr.esrf.tangoatk.widget.attribute.SimpleScalarViewer"
+    font:"Dialog",0,12
+  }
+  JDLabel {
+    summit:124,304,169,325
+    origin:134,315
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,12
+    text:"L/min"
+  }
+  JDLine {
+    summit:82,325,82,334
+    origin:83,330
+    name:"Line"
+  }
+  JDRectangle {
+    summit:169,113,284,293
+    origin:227,208
+    fillStyle:1
+    name:"Rectangle"
+  }
+  JDSwingObject {
+    summit:230,84,282,106
+    origin:287,96
+    fillStyle:1
+    name:"epfl/station1/cyan/Fill"
+    extensions:{
+      text:"Fill"
+    }
+    className:"fr.esrf.tangoatk.widget.command.VoidVoidCommandViewer"
+    font:"Dialog",1,12
+    border:3
+  }
+  JDBar {
+    summit:177,144,277,286
+    origin:227,215
+    fillStyle:1
+    maxvalue:100
+    initvalue:1
+    name:"epfl/station1/magenta/level"
+    backgroundmapper:{
+      mapping_type:2
+      mode:0
+      default:255,0,255
+      map:0,0,255,0,255
+    }
+    maxBar:100.0
+    valueBar:0.0
+  }
+  JDLabel {
+    summit:178,119,226,140
+    origin:200,130
+    lineWidth:0
+    name:"Label"
+    text:"Level:"
+  }
+  JDSwingObject {
+    summit:228,121,251,135
+    origin:235,139
+    fillStyle:1
+    lineWidth:0
+    maxvalue:100
+    name:"epfl/station1/magenta/level"
+    extensions:{
+      unitVisible:"false"
+      userFormat:"%2.0f"
+      alarmEnabled:"false"
+      validBackground:"255,255,255"
+      invalidText:"-----"
+    }
+    backgroundmapper:{
+      mapping_type:2
+      mode:0
+      default:255,255,255
+      map:10,100,255,255,255
+      map:10,10,255,0,0
+    }
+    className:"fr.esrf.tangoatk.widget.attribute.SimpleScalarViewer"
+    font:"Dialog",0,12
+  }
+  JDLabel {
+    summit:253,120,273,141
+    origin:263,131
+    lineWidth:0
+    name:"Label"
+    text:"%"
+  }
+  JDLabel {
+    summit:194,204,262,225
+    origin:215,215
+    lineWidth:0
+    name:"Label"
+    text:"Magenta"
+  }
+  JDLine {
+    summit:177,282,277,282
+    origin:226,282
+    lineStyle:1
+    name:"Line"
+  }
+  JDLine {
+    summit:177,263,277,263
+    origin:225,263
+    lineStyle:1
+    name:"Line"
+  }
+  JDLine {
+    summit:178,167,277,167
+    origin:226,167
+    lineStyle:1
+    name:"Line"
+  }
+  JDLine {
+    summit:178,148,277,148
+    origin:226,148
+    lineStyle:1
+    name:"Line"
+  }
+  JDRoundRectangle {
+    summit:169,85,206,105
+    origin:187,95
+    background:153,204,255
+    fillStyle:1
+    name:"RoundRectangle"
+  }
+  JDLabel {
+    summit:176,88,200,109
+    origin:187,99
+    lineWidth:0
+    name:"Label"
+    text:"T2"
+  }
+  JDLine {
+    summit:224,303,224,293
+    origin:224,298
+    name:"Line"
+  }
+  JDGroup {
+    summit:217,304,231,324
+    origin:136,9
+    background:153,153,153
+    fillStyle:1
+    name:"JDGroup"
+    children: {
+      JDPolyline {
+        summit:217,304,231,304,224,314,217,304
+        origin:224,309
+        background:153,153,153
+        fillStyle:1
+        name:"Polyline"
+      }
+      JDPolyline {
+        summit:217,324,231,324,224,314,217,324
+        origin:224,319
+        background:153,153,153
+        fillStyle:1
+        name:"Polyline"
+      }
+      JDLine {
+        summit:224,304,224,304
+        origin:224,304
+        background:153,153,153
+        fillStyle:1
+        name:"Line"
+      }
+    }
+  }
+  JDSwingObject {
+    summit:235,306,269,320
+    origin:249,324
+    fillStyle:1
+    lineWidth:0
+    maxvalue:100
+    name:"epfl/station1/magenta/flow"
+    extensions:{
+      unitVisible:"false"
+      userFormat:"%2.1f"
+      alarmEnabled:"false"
+      validBackground:"255,255,255"
+      invalidText:"-----"
+    }
+    backgroundmapper:{
+      mapping_type:2
+      mode:0
+      default:255,255,255
+      map:10,100,255,255,255
+      map:10,10,255,0,0
+    }
+    className:"fr.esrf.tangoatk.widget.attribute.SimpleScalarViewer"
+    font:"Dialog",0,12
+  }
+  JDLabel {
+    summit:266,303,311,324
+    origin:276,314
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,12
+    text:"L/min"
+  }
+  JDLine {
+    summit:224,324,224,333
+    origin:225,329
+    name:"Line"
+  }
+  JDRectangle {
+    summit:308,112,423,292
+    origin:366,207
+    fillStyle:1
+    name:"Rectangle"
+  }
+  JDSwingObject {
+    summit:369,83,421,105
+    origin:426,95
+    fillStyle:1
+    name:"epfl/station1/cyan/Fill"
+    extensions:{
+      text:"Fill"
+    }
+    className:"fr.esrf.tangoatk.widget.command.VoidVoidCommandViewer"
+    font:"Dialog",1,12
+    border:3
+  }
+  JDBar {
+    summit:316,143,416,285
+    origin:366,214
+    fillStyle:1
+    maxvalue:100
+    initvalue:1
+    name:"epfl/station1/yellow/level"
+    backgroundmapper:{
+      mapping_type:2
+      mode:0
+      default:255,255,0
+      map:0,0,255,255,0
+    }
+    maxBar:100.0
+    valueBar:0.0
+  }
+  JDLabel {
+    summit:317,118,365,139
+    origin:339,129
+    lineWidth:0
+    name:"Label"
+    text:"Level:"
+  }
+  JDSwingObject {
+    summit:367,120,390,134
+    origin:374,138
+    fillStyle:1
+    lineWidth:0
+    maxvalue:100
+    name:"epfl/station1/yellow/level"
+    extensions:{
+      unitVisible:"false"
+      userFormat:"%2.0f"
+      alarmEnabled:"false"
+      validBackground:"255,255,255"
+      invalidText:"-----"
+    }
+    backgroundmapper:{
+      mapping_type:2
+      mode:0
+      default:255,255,255
+      map:10,100,255,255,255
+      map:10,10,255,0,0
+    }
+    className:"fr.esrf.tangoatk.widget.attribute.SimpleScalarViewer"
+    font:"Dialog",0,12
+  }
+  JDLabel {
+    summit:392,119,412,140
+    origin:402,130
+    lineWidth:0
+    name:"Label"
+    text:"%"
+  }
+  JDLabel {
+    summit:339,203,390,224
+    origin:360,214
+    lineWidth:0
+    name:"Label"
+    text:"Yellow"
+  }
+  JDLine {
+    summit:316,281,416,281
+    origin:365,281
+    lineStyle:1
+    name:"Line"
+  }
+  JDLine {
+    summit:316,262,416,262
+    origin:364,262
+    lineStyle:1
+    name:"Line"
+  }
+  JDLine {
+    summit:317,166,416,166
+    origin:365,166
+    lineStyle:1
+    name:"Line"
+  }
+  JDLine {
+    summit:317,147,416,147
+    origin:365,147
+    lineStyle:1
+    name:"Line"
+  }
+  JDRoundRectangle {
+    summit:308,84,345,104
+    origin:326,94
+    background:153,204,255
+    fillStyle:1
+    name:"RoundRectangle"
+  }
+  JDLabel {
+    summit:315,87,339,108
+    origin:326,98
+    lineWidth:0
+    name:"Label"
+    text:"T3"
+  }
+  JDLine {
+    summit:363,302,363,292
+    origin:363,297
+    name:"Line"
+  }
+  JDGroup {
+    summit:356,303,370,323
+    origin:275,8
+    background:153,153,153
+    fillStyle:1
+    name:"JDGroup"
+    children: {
+      JDPolyline {
+        summit:356,303,370,303,363,313,356,303
+        origin:363,308
+        background:153,153,153
+        fillStyle:1
+        name:"Polyline"
+      }
+      JDPolyline {
+        summit:356,323,370,323,363,313,356,323
+        origin:363,318
+        background:153,153,153
+        fillStyle:1
+        name:"Polyline"
+      }
+      JDLine {
+        summit:363,303,363,303
+        origin:363,303
+        background:153,153,153
+        fillStyle:1
+        name:"Line"
+      }
+    }
+  }
+  JDSwingObject {
+    summit:374,305,408,319
+    origin:388,323
+    fillStyle:1
+    lineWidth:0
+    maxvalue:100
+    name:"epfl/station1/yellow/flow"
+    extensions:{
+      unitVisible:"false"
+      userFormat:"%2.1f"
+      alarmEnabled:"false"
+      validBackground:"255,255,255"
+      invalidText:"-----"
+    }
+    backgroundmapper:{
+      mapping_type:2
+      mode:0
+      default:255,255,255
+      map:10,100,255,255,255
+      map:10,10,255,0,0
+    }
+    className:"fr.esrf.tangoatk.widget.attribute.SimpleScalarViewer"
+    font:"Dialog",0,12
+  }
+  JDLabel {
+    summit:405,302,450,323
+    origin:415,313
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,12
+    text:"L/min"
+  }
+  JDLine {
+    summit:363,323,363,332
+    origin:364,328
+    name:"Line"
+  }
+  JDRectangle {
+    summit:447,112,562,292
+    origin:505,207
+    fillStyle:1
+    name:"Rectangle"
+  }
+  JDSwingObject {
+    summit:508,83,560,105
+    origin:565,95
+    fillStyle:1
+    name:"epfl/station1/cyan/Fill"
+    extensions:{
+      text:"Fill"
+    }
+    className:"fr.esrf.tangoatk.widget.command.VoidVoidCommandViewer"
+    font:"Dialog",1,12
+    border:3
+  }
+  JDBar {
+    summit:455,143,555,285
+    origin:505,214
+    fillStyle:1
+    maxvalue:100
+    initvalue:1
+    name:"epfl/station1/black/level"
+    backgroundmapper:{
+      mapping_type:2
+      mode:0
+      default:0,0,0
+      map:0,0,0,0,0
+    }
+    maxBar:100.0
+    valueBar:0.0
+  }
+  JDLabel {
+    summit:456,118,504,139
+    origin:478,129
+    lineWidth:0
+    name:"Label"
+    text:"Level:"
+  }
+  JDSwingObject {
+    summit:506,120,529,134
+    origin:513,138
+    fillStyle:1
+    lineWidth:0
+    maxvalue:100
+    name:"epfl/station1/black/level"
+    extensions:{
+      unitVisible:"false"
+      userFormat:"%2.0f"
+      alarmEnabled:"false"
+      validBackground:"255,255,255"
+      invalidText:"-----"
+    }
+    backgroundmapper:{
+      mapping_type:2
+      mode:0
+      default:255,255,255
+      map:10,100,255,255,255
+      map:10,10,255,0,0
+    }
+    className:"fr.esrf.tangoatk.widget.attribute.SimpleScalarViewer"
+    font:"Dialog",0,12
+  }
+  JDLabel {
+    summit:531,119,551,140
+    origin:541,130
+    lineWidth:0
+    name:"Label"
+    text:"%"
+  }
+  JDLabel {
+    summit:484,203,528,224
+    origin:505,214
+    foreground:255,255,255
+    lineWidth:0
+    name:"Label"
+    text:"Black"
+  }
+  JDLine {
+    summit:455,281,555,281
+    origin:504,281
+    lineStyle:1
+    name:"Line"
+  }
+  JDLine {
+    summit:455,262,555,262
+    origin:503,262
+    lineStyle:1
+    name:"Line"
+  }
+  JDLine {
+    summit:456,166,555,166
+    origin:504,166
+    lineStyle:1
+    name:"Line"
+  }
+  JDLine {
+    summit:456,147,555,147
+    origin:504,147
+    lineStyle:1
+    name:"Line"
+  }
+  JDRoundRectangle {
+    summit:447,84,484,104
+    origin:465,94
+    background:153,204,255
+    fillStyle:1
+    name:"RoundRectangle"
+  }
+  JDLabel {
+    summit:454,87,478,108
+    origin:465,98
+    lineWidth:0
+    name:"Label"
+    text:"T4"
+  }
+  JDLine {
+    summit:502,302,502,292
+    origin:502,297
+    name:"Line"
+  }
+  JDGroup {
+    summit:495,303,509,323
+    origin:414,8
+    background:153,153,153
+    fillStyle:1
+    name:"JDGroup"
+    children: {
+      JDPolyline {
+        summit:495,303,509,303,502,313,495,303
+        origin:502,308
+        background:153,153,153
+        fillStyle:1
+        name:"Polyline"
+      }
+      JDPolyline {
+        summit:495,323,509,323,502,313,495,323
+        origin:502,318
+        background:153,153,153
+        fillStyle:1
+        name:"Polyline"
+      }
+      JDLine {
+        summit:502,303,502,303
+        origin:502,303
+        background:153,153,153
+        fillStyle:1
+        name:"Line"
+      }
+    }
+  }
+  JDSwingObject {
+    summit:513,305,547,319
+    origin:527,323
+    fillStyle:1
+    lineWidth:0
+    maxvalue:100
+    name:"epfl/station1/cyan/flow"
+    extensions:{
+      unitVisible:"false"
+      userFormat:"%2.1f"
+      alarmEnabled:"false"
+      validBackground:"255,255,255"
+      invalidText:"-----"
+    }
+    backgroundmapper:{
+      mapping_type:2
+      mode:0
+      default:255,255,255
+      map:10,100,255,255,255
+      map:10,10,255,0,0
+    }
+    className:"fr.esrf.tangoatk.widget.attribute.SimpleScalarViewer"
+    font:"Dialog",0,12
+  }
+  JDLabel {
+    summit:544,302,589,323
+    origin:554,313
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,12
+    text:"L/min"
+  }
+  JDLine {
+    summit:502,323,502,332
+    origin:503,328
+    name:"Line"
+  }
+  JDRectangle {
+    summit:587,112,702,292
+    origin:645,207
+    fillStyle:1
+    name:"Rectangle"
+  }
+  JDSwingObject {
+    summit:648,83,700,105
+    origin:705,95
+    fillStyle:1
+    name:"epfl/station1/cyan/Fill"
+    extensions:{
+      text:"Fill"
+    }
+    className:"fr.esrf.tangoatk.widget.command.VoidVoidCommandViewer"
+    font:"Dialog",1,12
+    border:3
+  }
+  JDBar {
+    summit:595,143,695,285
+    origin:645,214
+    fillStyle:1
+    maxvalue:100
+    initvalue:1
+    name:"epfl/station1/white/level"
+    backgroundmapper:{
+      mapping_type:2
+      mode:0
+      default:255,255,255
+      map:0,0,255,255,255
+    }
+    foregroundmapper:{
+      mapping_type:2
+      mode:0
+      default:128,128,128
+      map:0,0,153,153,153
+    }
+    maxBar:100.0
+    valueBar:0.0
+  }
+  JDLabel {
+    summit:596,118,644,139
+    origin:618,129
+    lineWidth:0
+    name:"Label"
+    text:"Level:"
+  }
+  JDSwingObject {
+    summit:646,120,669,134
+    origin:653,138
+    fillStyle:1
+    lineWidth:0
+    maxvalue:100
+    name:"epfl/station1/white/level"
+    extensions:{
+      unitVisible:"false"
+      userFormat:"%2.0f"
+      alarmEnabled:"false"
+      validBackground:"255,255,255"
+      invalidText:"-----"
+    }
+    backgroundmapper:{
+      mapping_type:2
+      mode:0
+      default:255,255,255
+      map:10,100,255,255,255
+      map:10,10,255,0,0
+    }
+    className:"fr.esrf.tangoatk.widget.attribute.SimpleScalarViewer"
+    font:"Dialog",0,12
+  }
+  JDLabel {
+    summit:671,119,691,140
+    origin:681,130
+    lineWidth:0
+    name:"Label"
+    text:"%"
+  }
+  JDLabel {
+    summit:624,203,671,224
+    origin:645,214
+    lineWidth:0
+    name:"Label"
+    text:"White"
+  }
+  JDLine {
+    summit:595,281,695,281
+    origin:644,281
+    lineStyle:1
+    name:"Line"
+  }
+  JDLine {
+    summit:595,262,695,262
+    origin:643,262
+    lineStyle:1
+    name:"Line"
+  }
+  JDLine {
+    summit:596,166,695,166
+    origin:644,166
+    lineStyle:1
+    name:"Line"
+  }
+  JDLine {
+    summit:596,147,695,147
+    origin:644,147
+    lineStyle:1
+    name:"Line"
+  }
+  JDRoundRectangle {
+    summit:587,84,624,104
+    origin:605,94
+    background:153,204,255
+    fillStyle:1
+    name:"RoundRectangle"
+  }
+  JDLabel {
+    summit:594,87,618,108
+    origin:605,98
+    lineWidth:0
+    name:"Label"
+    text:"T5"
+  }
+  JDLine {
+    summit:642,302,642,292
+    origin:642,297
+    name:"Line"
+  }
+  JDGroup {
+    summit:635,303,649,323
+    origin:554,8
+    background:153,153,153
+    fillStyle:1
+    name:"JDGroup"
+    children: {
+      JDPolyline {
+        summit:635,303,649,303,642,313,635,303
+        origin:642,308
+        background:153,153,153
+        fillStyle:1
+        name:"Polyline"
+      }
+      JDPolyline {
+        summit:635,323,649,323,642,313,635,323
+        origin:642,318
+        background:153,153,153
+        fillStyle:1
+        name:"Polyline"
+      }
+      JDLine {
+        summit:642,303,642,303
+        origin:642,303
+        background:153,153,153
+        fillStyle:1
+        name:"Line"
+      }
+    }
+  }
+  JDSwingObject {
+    summit:653,305,687,319
+    origin:667,323
+    fillStyle:1
+    lineWidth:0
+    maxvalue:100
+    name:"epfl/station1/white/flow"
+    extensions:{
+      unitVisible:"false"
+      userFormat:"%2.1f"
+      alarmEnabled:"false"
+      validBackground:"255,255,255"
+      invalidText:"-----"
+    }
+    backgroundmapper:{
+      mapping_type:2
+      mode:0
+      default:255,255,255
+      map:10,100,255,255,255
+      map:10,10,255,0,0
+    }
+    className:"fr.esrf.tangoatk.widget.attribute.SimpleScalarViewer"
+    font:"Dialog",0,12
+  }
+  JDLabel {
+    summit:684,302,729,323
+    origin:694,313
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,12
+    text:"L/min"
+  }
+  JDLine {
+    summit:642,323,642,332
+    origin:643,328
+    name:"Line"
+  }
+  JDLine {
+    summit:83,334,643,334
+    origin:363,335
+    name:"Line"
+  }
+  JDRectangle {
+    summit:34,395,278,503
+    origin:95,447
+    fillStyle:1
+    name:"Rectangle"
+  }
+  JDSwingObject {
+    summit:223,512,275,534
+    origin:280,524
+    fillStyle:1
+    name:"epfl/station1/mixer/Flush"
+    extensions:{
+      text:"Flush"
+    }
+    className:"fr.esrf.tangoatk.widget.command.VoidVoidCommandViewer"
+    font:"Dialog",1,12
+    border:3
+  }
+  JDBar {
+    summit:44,419,269,497
+    origin:132,446
+    background:102,102,102
+    fillStyle:1
+    maxvalue:100
+    initvalue:1
+    name:"epfl/station1/mixer/level"
+    extensions:{
+      validBackground:"epfl/station1/mixer/color"
+    }
+    maxBar:100.0
+    valueBar:0.0
+  }
+  JDLabel {
+    summit:104,399,152,420
+    origin:126,410
+    lineWidth:0
+    name:"Label"
+    text:"Level:"
+  }
+  JDSwingObject {
+    summit:154,401,177,415
+    origin:161,419
+    fillStyle:1
+    lineWidth:0
+    maxvalue:100
+    name:"epfl/station1/mixer/level"
+    extensions:{
+      unitVisible:"false"
+      userFormat:"%2.0f"
+      alarmEnabled:"false"
+      validBackground:"255,255,255"
+      invalidText:"-----"
+    }
+    backgroundmapper:{
+      mapping_type:2
+      mode:0
+      default:255,255,255
+      map:10,100,255,255,255
+      map:10,10,255,0,0
+    }
+    className:"fr.esrf.tangoatk.widget.attribute.SimpleScalarViewer"
+    font:"Dialog",0,12
+  }
+  JDLabel {
+    summit:179,401,199,422
+    origin:189,412
+    lineWidth:0
+    name:"Label"
+    text:"%"
+  }
+  JDLine {
+    summit:44,493,271,494
+    origin:106,494
+    lineStyle:1
+    name:"Line"
+  }
+  JDLine {
+    summit:44,482,270,482
+    origin:105,483
+    lineStyle:1
+    name:"Line"
+  }
+  JDLine {
+    summit:45,435,270,435
+    origin:103,435
+    lineStyle:1
+    name:"Line"
+  }
+  JDLine {
+    summit:45,425,269,425
+    origin:104,425
+    lineStyle:1
+    name:"Line"
+  }
+  JDRoundRectangle {
+    summit:34,371,71,391
+    origin:52,381
+    background:153,204,255
+    fillStyle:1
+    name:"RoundRectangle"
+  }
+  JDLabel {
+    summit:40,373,68,394
+    origin:51,384
+    lineWidth:0
+    name:"Label"
+    text:"MB"
+  }
+  JDLine {
+    summit:127,513,127,503
+    origin:127,508
+    name:"Line"
+  }
+  JDGroup {
+    summit:120,514,134,534
+    origin:39,219
+    background:153,153,153
+    fillStyle:1
+    name:"JDGroup"
+    children: {
+      JDPolyline {
+        summit:120,514,134,514,127,524,120,514
+        origin:127,519
+        background:153,153,153
+        fillStyle:1
+        name:"Polyline"
+      }
+      JDPolyline {
+        summit:120,534,134,534,127,524,120,534
+        origin:127,529
+        background:153,153,153
+        fillStyle:1
+        name:"Polyline"
+      }
+      JDLine {
+        summit:127,514,127,514
+        origin:127,514
+        background:153,153,153
+        fillStyle:1
+        name:"Line"
+      }
+    }
+  }
+  JDSwingObject {
+    summit:138,516,172,530
+    origin:152,534
+    fillStyle:1
+    lineWidth:0
+    maxvalue:100
+    name:"epfl/station1/cyan/flow"
+    extensions:{
+      unitVisible:"false"
+      userFormat:"%2.1f"
+      alarmEnabled:"false"
+      validBackground:"255,255,255"
+      invalidText:"-----"
+    }
+    backgroundmapper:{
+      mapping_type:2
+      mode:0
+      default:255,255,255
+      map:10,100,255,255,255
+      map:10,10,255,0,0
+    }
+    className:"fr.esrf.tangoatk.widget.attribute.SimpleScalarViewer"
+    font:"Dialog",0,12
+  }
+  JDLabel {
+    summit:169,513,214,534
+    origin:179,524
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,12
+    text:"L/min"
+  }
+  JDLine {
+    summit:156,335,156,395
+    origin:156,365
+    name:"Line"
+  }
+  JDSwingObject {
+    summit:300,395,396,546
+    origin:358,407
+    fillStyle:1
+    name:"epfl/station1/cyan/Fill"
+    extensions:{
+      text:"Stop station"
+    }
+    className:"fr.esrf.tangoatk.widget.command.VoidVoidCommandViewer"
+    font:"Dialog",1,12
+    border:3
+  }
+  JDSwingObject {
+    summit:730,72,1176,230
+    origin:930,139
+    foreground:51,51,51
+    background:238,238,238
+    fillStyle:1
+    lineWidth:0
+    maxvalue:100
+    name:"epfl/station1/mixer/level"
+    extensions:{
+      trendSettings:"graph_title:'null'",
+                    "label_visible:true",
+                    "label_placement:4",
+                    "label_font:Dialog,0,12",
+                    "graph_background:180,180,180",
+                    "chart_background:255,255,255",
+                    "title_font:Dialog,0,12",
+                    "display_duration:300000.0",
+                    "precision:0",
+                    "toolbar_visible:true",
+                    "tree_visible:false",
+                    "date_visible:false",
+                    "show_device_name:0",
+                    "min_refresh_time:0",
+                    "xvisible:true",
+                    "xgrid:false",
+                    "xsubgrid:false",
+                    "xtimeannosubtick:0",
+                    "xgrid_style:1",
+                    "xmin:0.0",
+                    "xmax:100.0",
+                    "xautoscale:true",
+                    "xscale:0",
+                    "xformat:0",
+                    "xtitle:'null'",
+                    "xcolor:0,0,0",
+                    "xlabel_font:Dialog,0,11",
+                    "xfit_display_duration:true",
+                    "xpercentscrollback:0.0",
+                    "y1visible:true",
+                    "y1grid:false",
+                    "y1subgrid:false",
+                    "y1timeannosubtick:0",
+                    "y1grid_style:1",
+                    "y1min:0.0",
+                    "y1max:100.0",
+                    "y1autoscale:true",
+                    "y1scale:0",
+                    "y1format:0",
+                    "y1title:'null'",
+                    "y1color:0,0,0",
+                    "y1label_font:Dialog,0,11",
+                    "y1fit_display_duration:true",
+                    "y1percentscrollback:0.0",
+                    "y2visible:true",
+                    "y2grid:false",
+                    "y2subgrid:false",
+                    "y2timeannosubtick:0",
+                    "y2grid_style:1",
+                    "y2min:0.0",
+                    "y2max:100.0",
+                    "y2autoscale:true",
+                    "y2scale:0",
+                    "y2format:0",
+                    "y2title:'null'",
+                    "y2color:0,0,0",
+                    "y2label_font:Dialog,0,11",
+                    "y2fit_display_duration:true",
+                    "y2percentscrollback:0.0",
+                    "dv_number:1",
+                    "dv0_name:'my/device/example/my_attribute'",
+                    "dv0_selected:2",
+                    "dv0_linecolor:255,0,0",
+                    "dv0_linewidth:1",
+                    "dv0_linestyle:0",
+                    "dv0_fillcolor:192,192,192",
+                    "dv0_fillmethod:2",
+                    "dv0_fillstyle:0",
+                    "dv0_viewtype:0",
+                    "dv0_barwidth:10",
+                    "dv0_markercolor:255,0,0",
+                    "dv0_markersize:6",
+                    "dv0_markerstyle:0",
+                    "dv0_A0:0.0",
+                    "dv0_A1:1.0",
+                    "dv0_A2:0.0",
+                    "dv0_labelvisible:true",
+                    "dv0_clickable:true",
+                    "dv0_labelColor:0,0,0"
+      attribute:"epfl/station1/mixer/level"
+    }
+    className:"fr.esrf.tangoatk.widget.attribute.Trend"
+    font:"Dialog",0,12
+  }
+  JDLabel {
+    summit:140,272,177,293
+    origin:159,283
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L2.1"
+  }
+  JDLabel {
+    summit:140,253,177,274
+    origin:159,264
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L2.2"
+  }
+  JDLabel {
+    summit:139,138,176,159
+    origin:158,149
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L2.4"
+  }
+  JDLabel {
+    summit:139,157,176,178
+    origin:158,168
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L2.3"
+  }
+  JDLabel {
+    summit:-1,140,36,161
+    origin:18,151
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L1.4"
+  }
+  JDLabel {
+    summit:-1,159,36,180
+    origin:18,170
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L1.3"
+  }
+  JDLabel {
+    summit:0,255,37,276
+    origin:19,266
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L1.2"
+  }
+  JDLabel {
+    summit:0,274,37,295
+    origin:19,285
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L1.1"
+  }
+  JDLabel {
+    summit:279,137,316,158
+    origin:298,148
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L3.4"
+  }
+  JDLabel {
+    summit:279,156,316,177
+    origin:298,167
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L3.3"
+  }
+  JDLabel {
+    summit:280,252,317,273
+    origin:299,263
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L3.2"
+  }
+  JDLabel {
+    summit:280,271,317,292
+    origin:299,282
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L3.1"
+  }
+  JDLabel {
+    summit:418,137,455,158
+    origin:437,148
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L4.4"
+  }
+  JDLabel {
+    summit:418,156,455,177
+    origin:437,167
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L4.3"
+  }
+  JDLabel {
+    summit:419,252,456,273
+    origin:438,263
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L4.2"
+  }
+  JDLabel {
+    summit:419,271,456,292
+    origin:438,282
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L4.1"
+  }
+  JDLabel {
+    summit:557,137,594,158
+    origin:576,148
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L5.4"
+  }
+  JDLabel {
+    summit:557,156,594,177
+    origin:576,167
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L5.3"
+  }
+  JDLabel {
+    summit:558,252,595,273
+    origin:577,263
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L5.2"
+  }
+  JDLabel {
+    summit:558,271,595,292
+    origin:577,282
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L5.1"
+  }
+  JDLabel {
+    summit:2,414,39,435
+    origin:21,425
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L6.4"
+  }
+  JDLabel {
+    summit:1,426,38,447
+    origin:20,437
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L6.3"
+  }
+  JDLabel {
+    summit:2,471,39,492
+    origin:21,482
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L6.2"
+  }
+  JDLabel {
+    summit:1,484,38,505
+    origin:20,495
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",0,8
+    text:"L6.1"
+  }
+  JDSwingObject {
+    summit:730,237,1170,400
+    origin:930,304
+    foreground:51,51,51
+    background:238,238,238
+    fillStyle:1
+    lineWidth:0
+    maxvalue:100
+    name:"epfl/station1/mixer/temperature"
+    extensions:{
+      trendSettings:"graph_title:'null'",
+                    "label_visible:true",
+                    "label_placement:4",
+                    "label_font:Dialog,0,12",
+                    "graph_background:180,180,180",
+                    "chart_background:255,255,255",
+                    "title_font:Dialog,0,12",
+                    "display_duration:3000.0",
+                    "precision:0",
+                    "toolbar_visible:true",
+                    "tree_visible:false",
+                    "date_visible:false",
+                    "show_device_name:0",
+                    "min_refresh_time:0",
+                    "xvisible:true",
+                    "xgrid:false",
+                    "xsubgrid:false",
+                    "xtimeannosubtick:0",
+                    "xgrid_style:1",
+                    "xmin:0.0",
+                    "xmax:100.0",
+                    "xautoscale:true",
+                    "xscale:0",
+                    "xformat:0",
+                    "xtitle:'null'",
+                    "xcolor:0,0,0",
+                    "xlabel_font:Dialog,0,11",
+                    "xfit_display_duration:true",
+                    "xpercentscrollback:0.0",
+                    "y1visible:true",
+                    "y1grid:false",
+                    "y1subgrid:false",
+                    "y1timeannosubtick:0",
+                    "y1grid_style:1",
+                    "y1min:0.0",
+                    "y1max:100.0",
+                    "y1autoscale:true",
+                    "y1scale:0",
+                    "y1format:0",
+                    "y1title:'null'",
+                    "y1color:0,0,0",
+                    "y1label_font:Dialog,0,11",
+                    "y1fit_display_duration:true",
+                    "y1percentscrollback:0.0",
+                    "y2visible:true",
+                    "y2grid:false",
+                    "y2subgrid:false",
+                    "y2timeannosubtick:0",
+                    "y2grid_style:1",
+                    "y2min:0.0",
+                    "y2max:100.0",
+                    "y2autoscale:true",
+                    "y2scale:0",
+                    "y2format:0",
+                    "y2title:'null'",
+                    "y2color:0,0,0",
+                    "y2label_font:Dialog,0,11",
+                    "y2fit_display_duration:true",
+                    "y2percentscrollback:0.0",
+                    "dv_number:1",
+                    "dv0_name:'my/device/example/my_attribute'",
+                    "dv0_selected:2",
+                    "dv0_linecolor:255,0,0",
+                    "dv0_linewidth:1",
+                    "dv0_linestyle:0",
+                    "dv0_fillcolor:192,192,192",
+                    "dv0_fillmethod:2",
+                    "dv0_fillstyle:0",
+                    "dv0_viewtype:0",
+                    "dv0_barwidth:10",
+                    "dv0_markercolor:255,0,0",
+                    "dv0_markersize:6",
+                    "dv0_markerstyle:0",
+                    "dv0_A0:0.0",
+                    "dv0_A1:1.0",
+                    "dv0_A2:0.0",
+                    "dv0_labelvisible:true",
+                    "dv0_clickable:true",
+                    "dv0_labelColor:0,0,0"
+      attribute:"epfl/station1/mixer/level"
+    }
+    className:"fr.esrf.tangoatk.widget.attribute.Trend"
+    font:"Dialog",0,12
+  }
+  JDRectangle {
+    summit:434,421,1172,544
+    origin:434,421
+    name:"Rectangle"
+  }
+  JDLine {
+    summit:581,421,581,542
+    origin:581,482
+    name:"Line"
+  }
+  JDLine {
+    summit:729,422,729,543
+    origin:729,483
+    name:"Line"
+  }
+  JDLine {
+    summit:876,422,876,544
+    origin:876,483
+    name:"Line"
+  }
+  JDLine {
+    summit:1024,422,1024,543
+    origin:1024,483
+    name:"Line"
+  }
+  JDLine {
+    summit:434,453,1171,452
+    origin:803,453
+    name:"Line"
+  }
+  JDLine {
+    summit:434,483,1172,483
+    origin:803,483
+    name:"Line"
+  }
+  JDLine {
+    summit:434,513,1172,514
+    origin:803,514
+    name:"Line"
+  }
+  JDLabel {
+    summit:470,428,544,449
+    origin:507,439
+    lineWidth:0
+    name:"Label"
+    text:"Day/Time"
+  }
+  JDLabel {
+    summit:620,428,677,449
+    origin:657,439
+    lineWidth:0
+    name:"Label"
+    text:"Priority"
+  }
+  JDLabel {
+    summit:775,428,824,449
+    origin:800,439
+    lineWidth:0
+    name:"Label"
+    text:"Origin"
+  }
+  JDLabel {
+    summit:926,428,974,449
+    origin:950,439
+    lineWidth:0
+    name:"Label"
+    text:"Name"
+  }
+  JDLabel {
+    summit:1055,429,1141,450
+    origin:1098,440
+    lineWidth:0
+    name:"Label"
+    text:"Description"
+  }
+  JDLabel {
+    summit:432,387,576,411
+    origin:486,398
+    lineWidth:0
+    name:"Label"
+    font:"Dialog",1,17
+    text:"Alarms/Events"
+  }
+}

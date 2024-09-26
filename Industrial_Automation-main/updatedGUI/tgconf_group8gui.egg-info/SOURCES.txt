@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+tgconf_group8gui/__init__.py
+tgconf_group8gui/config.py
+tgconf_group8gui/config.xml
+tgconf_group8gui/mixingStation.jdw
+tgconf_group8gui/paintTank.jdw
+tgconf_group8gui.egg-info/PKG-INFO
+tgconf_group8gui.egg-info/SOURCES.txt
+tgconf_group8gui.egg-info/dependency_links.txt
+tgconf_group8gui.egg-info/entry_points.txt
+tgconf_group8gui.egg-info/requires.txt
+tgconf_group8gui.egg-info/top_level.txt

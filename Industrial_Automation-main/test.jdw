@@ -1,0 +1,32 @@
+JDFile v11 {
+  Global {
+  }
+  JDRectangle {
+    summit:78,114,234,148
+    origin:156,131
+    name:"epfl/station1/cyan"
+  }
+  JDLabel {
+    summit:39,123,74,144
+    origin:57,134
+    lineWidth:0
+    name:"flow"
+    text:"flow"
+  }
+  JDSwingObject {
+    summit:273,122,403,164
+    origin:307,130
+    fillStyle:1
+    lineWidth:0
+    name:"epfl/station1/cyan/level"
+    extensions:{
+      unitVisible:"true"
+      userFormat:""
+      alarmEnabled:"true"
+      validBackground:"0,255,0"
+      invalidText:"-----"
+    }
+    className:"fr.esrf.tangoatk.widget.attribute.SimpleScalarViewer"
+    font:"Dialog",0,12
+  }
+}

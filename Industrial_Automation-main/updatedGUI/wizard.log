@@ -1,0 +1,11 @@
+Project created by AppSettingsWizard on 2024-05-18T23:53:07.913460
+File copied: /shared/mixingStation.jdw --> /shared/updatedGUI/tgconf_group8gui/mixingStation.jdw
+File copied: /shared/paintTank.jdw --> /shared/updatedGUI/tgconf_group8gui/paintTank.jdw
+XML Config file created: "/shared/updatedGUI/tgconf_group8gui/config.xml"
+Python config file created: "/shared/updatedGUI/tgconf_group8gui/config.py"
+python init file created: "/shared/updatedGUI/tgconf_group8gui/__init__.py"
+Application project was successfully created.You can find the files in: "/shared/updatedGUI"
+Tip: You can install it with:
+	pip install /shared/updatedGUI
+Tip: And then run the application with:
+	 group8gui

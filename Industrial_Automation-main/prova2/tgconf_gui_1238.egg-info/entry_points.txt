@@ -1,0 +1,3 @@
+[console_scripts]
+gui_1238 = tgconf_gui_1238:run
+
